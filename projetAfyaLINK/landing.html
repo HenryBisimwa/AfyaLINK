@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfyaLINK - Accueil</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="p-0 m-0 box-border">
+
+<div id="overlay"
+     class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden z-30">
+</div>
+    <nav id="nav" class="backdrop-blur-2xl w-full h-[12vh] flex lg:justify-around justify-between sm:justify-between items-center px-2 fixed top-0 left-0 z-50">
+        <div class="lg:w-[20%] h-[11vh] flex gap-1.5 justify-start items-center">
+            <img class="lg:w-[20%] w-[40%] h-[8vh] lg:h-[8vh] rounded-2xl" src="/projetAfyaLINK/autres/logos/logo!.png" alt="">
+            <div class="h-[10vh] w-[70%] flex flex-col justify-center relative">
+                <p><span class="text-green-600 font-bold lg:text-3xl text-xl">Afya</span><span class="text-blue-700 font-bold lg:text-3xl text-xl">LINK</span></p>
+                <p id="titre" class="font-bold italic lg:text-[12px] text-[8px] text-white absolute top-10 lg:top-12 left-7 lg:left-11 sm:top-11">Santé Connectée</p>
+            </div>
+        </div>
+        <div id="div1" class="lg:border-r-2 lg:w-[60%] lg:p-3 lg:flex justify-center items-center hidden sm:hidden text-[#f8fbfce1]">
+            <ul id="uli" class="lg:flex lg:gap-15">
+                <li class="hover:translate-x-2 duration-300 hover:text-blue-700"><a class="font-bold lg:text-[18px]" href="#accueil">Accueil</a></li>
+                <li class="hover:translate-x-2 duration-300 hover:text-blue-700"><a class="font-bold lg:text-[18px]" href="#modules">Modules</a></li>
+                <li class="hover:translate-x-2 duration-300 hover:text-blue-700"><a class="font-bold lg:text-[18px]" href="#apropos">À propos</a></li>
+            </ul>
+        </div>
+        <div class="flex justify-center items-center gap-4 pr-4">
+            <a href="pages/login.html" id="connexion" class="hidden lg:block px-4 py-2 font-bold  hover:text-green-500">Connexion</a>
+            <a href="pages/inscription.html" class="px-4 py-2 bg-green-600 text-white rounded-lg font-bold hover:bg-green-700">Inscription</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" id="burger" class="hover:bg-gray-400 bg-gray-200 lg:hidden cursor-pointer">
+	          <path d="M0 0h24v24H0z" fill="none" />
+	          <g fill="none">
+		      <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+		      <path fill="currentColor" d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+	          </g>
+            </svg>
+
+        </div>
+    </nav>
+
+<div id="mobileMenu"
+    class="hidden fixed top-[12vh] left-0 w-full bg-white shadow-xl z-40 lg:hidden">
+
+    <ul class="flex flex-col text-center font-semibold">
+
+        <li class="border-b hover:translate-x-1.5 duration-300">
+            <a href="#accueil" class="block py-4 hover:bg-green-100">
+                Accueil
+            </a>
+        </li>
+
+        <li class="border-b hover:translate-x-1.5 duration-300">
+            <a href="#modules" class="block py-4 hover:bg-green-100">
+                Modules
+            </a>
+        </li>
+
+        <li class="border-b hover:translate-x-1.5 duration-300">
+            <a href="#apropos" class="block py-4 hover:bg-green-100">
+                À propos
+            </a>
+        </li>
+
+        <li class="border-b">
+            <a href="pages/login.html" class="block py-4 hover:bg-green-100">
+                Connexion
+            </a>
+        </li>
+
+        <li>
+            <a href="pages/inscription.html"
+               class="block py-4 bg-green-600 text-white hover:bg-green-700">
+                Inscription
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+    <main id="accueil" class="w-full h-screen flex flex-col justify-center items-center text-white text-center px-4">
+        <h2 class="font-bold text-5xl lg:text-7xl drop-shadow-xl">AFYALINK</h2>
+        <p class="mt-4 max-w-2xl lg:text-4xl text-xl italic drop-shadow">Un Système Intelligent de <span class="bg-blue-700 duration-500 text-2xl rounded-br-xl rounded-tl-xl p-1.5 italic">Gestion</span> Hospitalière — patients, rendez-vous, consultations et <a href="#modules" class="hover:underline text-[25px] text-blue-500">plus</a>.</p>
+        <div class="mt-8 flex gap-4 flex-wrap justify-center">
+            <a href="pages/inscription.html" class="px-6 py-3 bg-green-600 rounded-lg font-bold hover:bg-green-700">Créer un compte</a>
+            <a href="pages/login.html" class="px-6 py-3 bg-white text-green-700 rounded-lg font-bold hover:bg-gray-100">Se connecter</a>
+        </div>
+    </main>
+
+
+    <section id="apropos" class="w-full py-16 px-4 bg-white text-center">
+        <h2 class="font-bold lg:text-6xl text-3xl mb-4 mt-10">Bienvenue sur AfyaLINK</h2>
+        <p class="max-w-3xl mx-auto text-gray-600">Réduisez les files d'attente, organisez les dossiers patients et améliorez la prise en charge grâce à une plateforme simple et moderne.</p>
+    </section>
+
+    <section id="pourquoi" class="py-20 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-4xl font-bold text-center text-green-700">
+            Pourquoi choisir AfyaLink ?
+        </h2>
+
+        <p class="text-center text-gray-500 mt-4 mb-14">
+            Une plateforme pensée pour simplifier la gestion hospitalière
+            et améliorer l'expérience des patients comme du personnel médical.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Carte 1 -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl mb-5">
+                    ⏱️
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Réduction des files
+                </h3>
+
+                <p class="text-gray-600">
+                    Les patients prennent rendez-vous à l'avance
+                    et évitent les longues heures d'attente.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl mb-5">
+                    📁
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Dossier numérique
+                </h3>
+
+                <p class="text-gray-600">
+                    Toutes les informations médicales sont
+                    centralisées et accessibles rapidement.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl mb-5">
+                    👨‍⚕️
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Rendez-vous intelligents
+                </h3>
+
+                <p class="text-gray-600">
+                    Les médecins organisent facilement leur planning
+                    et les patients choisissent leurs créneaux.
+                </p>
+
+            </div>
+
+           
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl mb-5">
+                    🔒
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Données sécurisées
+                </h3>
+
+                <p class="text-gray-600">
+                    Les informations médicales sont protégées
+                    et accessibles uniquement aux personnes autorisées.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="fonctionnement" class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-4xl font-bold text-center text-green-700">
+            Comment fonctionne AfyaLink ?
+        </h2>
+
+        <p class="text-center text-gray-500 mt-4 mb-16">
+            Un parcours simple et rapide pour accéder aux soins.
+        </p>
+
+        <div class="grid md:grid-cols-5 gap-8 text-center">
+
+            <div>
+                <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl font-bold text-green-700">
+                    1
+                </div>
+
+                <h3 class="mt-5 font-bold text-xl">
+                    Créer un compte
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Le patient s'inscrit en quelques secondes.
+                </p>
+            </div>
+
+            <div>
+                <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl font-bold text-green-700">
+                    2
+                </div>
+
+                <h3 class="mt-5 font-bold text-xl">
+                    Choisir un médecin
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Sélection du spécialiste selon le besoin.
+                </p>
+            </div>
+
+            <div>
+                <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl font-bold text-green-700">
+                    3
+                </div>
+
+                <h3 class="mt-5 font-bold text-xl">
+                    Prendre rendez-vous
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Choisir une date et une heure disponibles.
+                </p>
+            </div>
+
+            <div>
+                <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl font-bold text-green-700">
+                    4
+                </div>
+
+                <h3 class="mt-5 font-bold text-xl">
+                    Consultation
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Le médecin reçoit le patient selon le rendez-vous.
+                </p>
+            </div>
+
+            <div>
+                <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl font-bold text-green-700">
+                    5
+                </div>
+
+                <h3 class="mt-5 font-bold text-xl">
+                    Suivi médical
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Le dossier est mis à jour et le patient peut consulter son historique.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="statistiques" class="py-20 bg-green-700 text-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-4xl font-bold text-center">
+            AfyaLink en quelques chiffres
+        </h2>
+
+        <p class="text-center mt-4 text-green-100 mb-14">
+            Des statistiques qui illustrent l'impact de la plateforme.
+        </p>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+            
+            <div class="bg-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
+
+                <h3 class="text-5xl font-bold">
+                    1 250+
+                </h3>
+
+                <p class="mt-3 text-lg">
+                    Patients inscrits
+                </p>
+
+            </div>
+
+           
+            <div class="bg-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
+
+                <h3 class="text-5xl font-bold">
+                    35
+                </h3>
+
+                <p class="mt-3 text-lg">
+                    Médecins
+                </p>
+
+            </div>
+
+            
+            <div class="bg-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
+
+                <h3 class="text-5xl font-bold">
+                    8 500+
+                </h3>
+
+                <p class="mt-3 text-lg">
+                    Rendez-vous réalisés
+                </p>
+
+            </div>
+
+          
+            <div class="bg-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
+
+                <h3 class="text-5xl font-bold">
+                    98%
+                </h3>
+
+                <p class="mt-3 text-lg">
+                    Satisfaction
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="modules" class="w-full min-h-[90vh] py-16 px-4 bg-gray-50">
+        <h2 class="font-bold text-4xl text-center mb-4 mt-10">Nos Modules</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">AfyaLINK couvre toute la gestion hospitalière en 10 modules interconnectés.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 max-w-7xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-green-600">
+                <h3 class="font-bold text-green-700">Patients</h3>
+                <p class="text-sm text-gray-600 mt-2">Comptes, profils et historique médical.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-blue-600">
+                <h3 class="font-bold text-blue-700">Médecins</h3>
+                <p class="text-sm text-gray-600 mt-2">Consultations, diagnostics et prescriptions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-purple-600">
+                <h3 class="font-bold text-purple-700">Rendez-vous</h3>
+                <p class="text-sm text-gray-600 mt-2">Prise de RDV et tickets numériques.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-orange-600">
+                <h3 class="font-bold text-orange-700">File d'attente</h3>
+                <p class="text-sm text-gray-600 mt-2">Enregistrement et temps d'attente estimé.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-teal-600">
+                <h3 class="font-bold text-teal-700">Consultations</h3>
+                <p class="text-sm text-gray-600 mt-2">Symptômes, diagnostic et traitement.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-red-600">
+                <h3 class="font-bold text-red-700">Laboratoire</h3>
+                <p class="text-sm text-gray-600 mt-2">Analyses et résultats en ligne.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-yellow-600">
+                <h3 class="font-bold text-yellow-700">Pharmacie</h3>
+                <p class="text-sm text-gray-600 mt-2">Stocks, ventes et alertes rupture.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-indigo-600">
+                <h3 class="font-bold text-indigo-700">Paiements</h3>
+                <p class="text-sm text-gray-600 mt-2">Facturation et historique des paiements.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-gray-600">
+                <h3 class="font-bold text-gray-700">Administration</h3>
+                <p class="text-sm text-gray-600 mt-2">Gestion globale de l'hôpital.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-pink-600">
+                <h3 class="font-bold text-pink-700">Statistiques</h3>
+                <p class="text-sm text-gray-600 mt-2">Tableaux de bord et indicateurs.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-gray-800 text-white text-center py-8 ">
+         <p class="mb-8"><span class="text-green-600 font-bold lg:text-3xl text-xl">Afya</span><span class="text-blue-700 font-bold lg:text-3xl text-xl">LINK</span></p>
+        <p>Copyright &copy; 2026 AfyaLINK — Santé Connectée</p>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>
