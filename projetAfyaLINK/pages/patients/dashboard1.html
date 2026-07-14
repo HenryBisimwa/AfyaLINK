@@ -1,13 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard1</title>
+    <title>Dashboard Patient - AfyaLink</title>
+
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
 
-<script src="dashboard1.js"></script>
+<body class="bg-gray-100">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="bg-white shadow-md">
+
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+            <!-- Burger (Mobile) -->
+
+            <button id="burger"
+                class="text-3xl lg:hidden">
+
+                ☰
+
+            </button>
+
+            <!-- Logo -->
+
+            <h1 class="text-3xl font-bold">
+
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+
+            </h1>
+
+            <!-- Utilisateur -->
+
+            <div class="flex items-center gap-3">
+
+                <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">
+
+                    P
+
+                </div>
+
+                <span class="hidden sm:block font-semibold">
+
+                    Patient
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= CONTENU ================= -->
+
+    <div class="flex">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside id="sidebar"
+            class="fixed lg:static top-0 left-0 h-screen w-64 bg-white shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-50">
+
+            <!-- Bouton Fermer (Mobile) -->
+
+            <div class="flex justify-end p-4 lg:hidden">
+
+                <button id="closeMenu"
+                    class="text-3xl">
+
+                    ✖
+
+                </button>
+
+            </div>
+
+            <nav class="px-4">
+
+                <ul class="space-y-2">
+
+                    <li>
+
+                        <a href="#"
+                            class="block p-3 rounded-lg bg-green-600 text-white">
+
+                            🏠 Tableau de bord
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"
+                            class="block p-3 rounded-lg hover:bg-green-100">
+
+                            📅 Mes rendez-vous
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"
+                            class="block p-3 rounded-lg hover:bg-green-100">
+
+                            💊 Mes ordonnances
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"
+                            class="block p-3 rounded-lg hover:bg-green-100">
+
+                            📁 Mon dossier
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"
+                            class="block p-3 rounded-lg hover:bg-green-100">
+
+                            👤 Mon profil
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <button id="logout"
+                            class="w-full text-left p-3 rounded-lg bg-red-100 text-red-600 hover:bg-red-200">
+
+                            🚪 Déconnexion
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- Fond sombre mobile -->
+
+        <div id="overlay"
+            class="hidden fixed inset-0 bg-black/40 z-40 lg:hidden">
+
+        </div>
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="flex-1 p-6">
+
+            <h2 class="text-3xl font-bold">
+
+                Bonjour 👋
+
+            </h2>
+
+            <p class="text-gray-500 mt-2 mb-8">
+
+                Bienvenue sur votre espace patient.
+
+            </p>
+
+            <!-- Cartes -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        📅 Rendez-vous
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Voir vos rendez-vous.
+
+                    </p>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        💊 Ordonnances
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Consulter vos ordonnances.
+
+                    </p>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        📁 Dossier médical
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Voir votre dossier.
+
+                    </p>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        ➕ Prendre rendez-vous
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Choisir un médecin.
+
+                    </p>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        👤 Mon profil
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Modifier vos informations.
+
+                    </p>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                    <h3 class="text-xl font-bold">
+
+                        🔔 Notifications
+
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+
+                        Voir les notifications.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="dashboard1.js"></script>
+
 </body>
+
 </html>
