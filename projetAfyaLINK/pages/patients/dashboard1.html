@@ -8,46 +8,40 @@
 
     <link rel="stylesheet" href="/src/output.css">
 </head>
-
 <body class="bg-gray-100">
 
-    <!-- ================= HEADER ================= -->
 
     <header class="bg-white shadow-md">
 
         <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
 
-            <!-- Burger (Mobile) -->
+            
 
-            <button id="burger"
-                class="text-3xl lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" id="burger" class="hover:bg-gray-300 lg:hidden cursor-pointer">>
+	      <path d="M0 0h24v24H0z" fill="none" />
+	      <g fill="none">
+		  <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+		  <path fill="currentColor" d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+	      </g>
+          </svg>
 
-                ☰
 
-            </button>
-
-            <!-- Logo -->
 
             <h1 class="text-3xl font-bold">
 
-                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+                <span class="text-green-600">Afya</span><span class="text-blue-700">LINK</span>
 
             </h1>
 
-            <!-- Utilisateur -->
 
             <div class="flex items-center gap-3">
 
                 <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold">
-
-                    P
-
+                  P
                 </div>
 
                 <span class="hidden sm:block font-semibold">
-
-                    Patient
-
+                   Patient
                 </span>
 
             </div>
@@ -56,26 +50,20 @@
 
     </header>
 
-    <!-- ================= CONTENU ================= -->
 
     <div class="flex">
 
-        <!-- ================= SIDEBAR ================= -->
 
         <aside id="sidebar"
             class="fixed lg:static top-0 left-0 h-screen w-64 bg-white shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-50">
 
-            <!-- Bouton Fermer (Mobile) -->
 
             <div class="flex justify-end p-4 lg:hidden">
 
-                <button id="closeMenu"
-                    class="text-3xl">
-
-                    ✖
-
-                </button>
-
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"  id="closeMenu" class=" hover:bg-red-600 hover:text-white cursor-pointer">
+	            <path d="M0 0h24v24H0z" fill="none" />
+	            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 18L18 6m0 12L6 6" />
+                </svg>
             </div>
 
             <nav class="px-4">
@@ -85,204 +73,190 @@
                     <li>
 
                         <a href="#"
-                            class="block p-3 rounded-lg bg-green-600 text-white">
+                            class=" p-3 rounded-lg bg-green-700 text-white flex items-center">
 
-                            🏠 Tableau de bord
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#"
-                            class="block p-3 rounded-lg hover:bg-green-100">
-
-                            📅 Mes rendez-vous
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                        <path d="M0 0h24v24H0z" fill="none" />
+	                        <path fill="currentColor" d="M13 9V3h8v6zM3 13V3h8v10zm10 8V11h8v10zM3 21v-6h8v6z" />
+                            </svg>
+                            Tableau de bord
 
                         </a>
 
                     </li>
 
                     <li>
+                        <a href="mes-rendez-vous.html"
+                            class=" p-3 rounded-lg hover:bg-green-100 flex items-center gap-1.5">
 
-                        <a href="#"
-                            class="block p-3 rounded-lg hover:bg-green-100">
-
-                            💊 Mes ordonnances
-
+                           <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 2048 2048">
+	                       <path d="M0 0h2048v2048H0z" fill="none" />
+	                       <path fill="#64bfdb" d="M1792 993q60 41 107 93t81 114t50 131t18 141q0 119-45 224t-124 183t-183 123t-224 46q-91 0-176-27t-156-78t-126-122t-85-157H128V128h256V0h128v128h896V0h128v128h256zM256 256v256h1408V256h-128v128h-128V256H512v128H384V256zm643 1280q-3-31-3-64q0-86 24-167t73-153h-97v-128h128v86q41-51 91-90t108-67t121-42t128-15q100 0 192 33V640H256v896zm573 384q93 0 174-35t142-96t96-142t36-175q0-93-35-174t-96-142t-142-96t-175-36q-93 0-174 35t-142 96t-96 142t-36 175q0 93 35 174t96 142t142 96t175 36m64-512h192v128h-320v-384h128zM384 1024h128v128H384zm256 0h128v128H640zm0-256h128v128H640zm-256 512h128v128H384zm256 0h128v128H640zm384-384H896V768h128zm256 0h-128V768h128zm256 0h-128V768h128z" />
+                           </svg>
+                           Mes rendez-vous
                         </a>
-
                     </li>
 
                     <li>
 
-                        <a href="#"
-                            class="block p-3 rounded-lg hover:bg-green-100">
+                        <a href="mes-ordonnances.html"
+                            class=" p-3 rounded-lg hover:bg-green-100 flex items-center gap-2">
 
-                            📁 Mon dossier
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                        <path d="M0 0h24v24H0z" fill="none" />
+	                        <path fill="currentColor" d="m18.067 21.902l1.516-1.515l-3.854-3.854l-1.515 1.515q-.81.81-.8 1.927q.009 1.117.8 1.927q.809.79 1.927.8t1.926-.8m2.204-2.204l1.516-1.515q.81-.81.81-1.927t-.81-1.927q-.79-.79-1.927-.79t-1.927.79l-1.516 1.515zM7.5 8.731h9v-1h-9zm5.038-4.501q.212-.213.212-.538t-.212-.537T12 2.942t-.537.213t-.213.537t.213.538t.537.212t.538-.212M10.683 20H5.616q-.672 0-1.144-.472T4 18.385V5.615q0-.67.472-1.143Q4.944 4 5.616 4h4.7q-.137-.766.366-1.383Q11.184 2 12 2q.835 0 1.338.617T13.685 4h4.7q.67 0 1.143.472q.472.472.472 1.144v5.182q-.954-.038-1.847.251q-.894.29-1.653.865V11.5h-9v1h8.34l-2.769 2.77H7.5v1h4.606q-.69.759-1.066 1.72q-.376.96-.357 2.01" />
+                            </svg>
+                             Mes ordonnances
 
                         </a>
+                    </li>
+                    <li>
+                        <a href="mon-dossier-medical.html"
+                            class=" p-3 rounded-lg hover:bg-green-100 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 80 80">
+	                         <path d="M0 0h80v80H0z" fill="none" />
+	                         <g fill="none">
+		                     <path fill="#f2994a" fill-rule="evenodd" d="M16 14a4 4 0 0 0-4 4v16a4 4 0 0 1 4-4v-1a4 4 0 0 1 4-4h40a4 4 0 0 1 4 4v1a4 4 0 0 1 4 4v-9.74a4 4 0 0 0-4-4H35.319c-.32 0-.627-.134-.843-.37l-.34-.372l-.376-.411l-.377-.411l-3.106-3.396a4 4 0 0 0-2.951-1.3z" clip-rule="evenodd" />
+		                     <path fill="#f2c94c" d="M12 34a4 4 0 0 1 4-4h48a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" />
+		                     <path fill="#f2f2f2" fill-rule="evenodd" d="M20 25a4 4 0 0 0-4 4v1h48v-1a4 4 0 0 0-4-4z" clip-rule="evenodd" />
+	                         </g>
+                            </svg>
+                              Mon dossier
 
+                        </a>
                     </li>
 
                     <li>
-
-                        <a href="#"
-                            class="block p-3 rounded-lg hover:bg-green-100">
-
-                            👤 Mon profil
-
+                        <a href="mon-profil.html"
+                            class=" p-3 rounded-lg hover:bg-green-100 flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                       <path d="M0 0h24v24H0z" fill="none" />
+	                       <path fill="#0c2ee2" fill-rule="evenodd" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z" clip-rule="evenodd" />
+                           </svg>
+                           Mon profil
                         </a>
-
                     </li>
 
                     <li>
-
                         <button id="logout"
-                            class="w-full text-left p-3 rounded-lg bg-red-100 text-red-600 hover:bg-red-200">
-
-                            🚪 Déconnexion
-
+                            class="w-full text-left p-3 rounded-lg bg-red-100 text-red-600 hover:bg-red-200 flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                        <path d="M0 0h24v24H0z" fill="none" />
+	                        <path fill="currentColor" d="M11.25 19a.75.75 0 0 1 .75-.75h6a.25.25 0 0 0 .25-.25V6a.25.25 0 0 0-.25-.25h-6a.75.75 0 0 1 0-1.5h6c.966 0 1.75.784 1.75 1.75v12A1.75 1.75 0 0 1 18 19.75h-6a.75.75 0 0 1-.75-.75" />
+	                        <path fill="currentColor" d="M15.612 13.115a1 1 0 0 1-1 1H9.756q-.035.533-.086 1.066l-.03.305a.718.718 0 0 1-1.025.578a16.8 16.8 0 0 1-4.885-3.539l-.03-.031a.72.72 0 0 1 0-.998l.03-.031a16.8 16.8 0 0 1 4.885-3.539a.718.718 0 0 1 1.025.578l.03.305q.051.532.086 1.066h4.856a1 1 0 0 1 1 1z" />
+                            </svg>
+                             Déconnexion
                         </button>
-
                     </li>
-
                 </ul>
-
             </nav>
-
         </aside>
 
-        <!-- Fond sombre mobile -->
 
         <div id="overlay"
             class="hidden fixed inset-0 bg-black/40 z-40 lg:hidden">
-
         </div>
-
-        <!-- ================= MAIN ================= -->
 
         <main class="flex-1 p-6">
 
-            <h2 class="text-3xl font-bold">
-
-                Bonjour 👋
-
-            </h2>
-
-            <p class="text-gray-500 mt-2 mb-8">
-
-                Bienvenue sur votre espace patient.
-
-            </p>
-
-            <!-- Cartes -->
-
+            <h2 class="text-3xl font-bold"> Bonjour 👋</h2>
+            <p class="text-gray-500 mt-2 mb-8"> Bienvenue sur votre espace patient. </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
 
+                <a href="mes-rendez-vous.html">
                 <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
 
-                    <h3 class="text-xl font-bold">
-
-                        📅 Rendez-vous
-
+                    <h3 class="text-xl font-bold flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 2048 2048">
+	                    <path d="M0 0h2048v2048H0z" fill="none" />
+	                    <path fill="#64bfdb" d="M1792 993q60 41 107 93t81 114t50 131t18 141q0 119-45 224t-124 183t-183 123t-224 46q-91 0-176-27t-156-78t-126-122t-85-157H128V128h256V0h128v128h896V0h128v128h256zM256 256v256h1408V256h-128v128h-128V256H512v128H384V256zm643 1280q-3-31-3-64q0-86 24-167t73-153h-97v-128h128v86q41-51 91-90t108-67t121-42t128-15q100 0 192 33V640H256v896zm573 384q93 0 174-35t142-96t96-142t36-175q0-93-35-174t-96-142t-142-96t-175-36q-93 0-174 35t-142 96t-96 142t-36 175q0 93 35 174t96 142t142 96t175 36m64-512h192v128h-320v-384h128zM384 1024h128v128H384zm256 0h128v128H640zm0-256h128v128H640zm-256 512h128v128H384zm256 0h128v128H640zm384-384H896V768h128zm256 0h-128V768h128zm256 0h-128V768h128z" />
+                        </svg>
+                        Rendez-vous
                     </h3>
 
-                    <p class="mt-2 text-gray-500">
-
-                        Voir vos rendez-vous.
-
-                    </p>
+                    <p class="mt-2 text-gray-500">  Voir vos rendez-vous. </p>
 
                 </div>
+                </a>
 
+                <a href="mes-ordonnances.html">
                 <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
 
-                    <h3 class="text-xl font-bold">
+                    <h3 class="text-xl font-bold flex items-center gap-2">
 
-                        💊 Ordonnances
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                        <path d="M0 0h24v24H0z" fill="none" />
+	                        <path fill="currentColor" d="m18.067 21.902l1.516-1.515l-3.854-3.854l-1.515 1.515q-.81.81-.8 1.927q.009 1.117.8 1.927q.809.79 1.927.8t1.926-.8m2.204-2.204l1.516-1.515q.81-.81.81-1.927t-.81-1.927q-.79-.79-1.927-.79t-1.927.79l-1.516 1.515zM7.5 8.731h9v-1h-9zm5.038-4.501q.212-.213.212-.538t-.212-.537T12 2.942t-.537.213t-.213.537t.213.538t.537.212t.538-.212M10.683 20H5.616q-.672 0-1.144-.472T4 18.385V5.615q0-.67.472-1.143Q4.944 4 5.616 4h4.7q-.137-.766.366-1.383Q11.184 2 12 2q.835 0 1.338.617T13.685 4h4.7q.67 0 1.143.472q.472.472.472 1.144v5.182q-.954-.038-1.847.251q-.894.29-1.653.865V11.5h-9v1h8.34l-2.769 2.77H7.5v1h4.606q-.69.759-1.066 1.72q-.376.96-.357 2.01" />
+                            </svg>
+                             Ordonnances
                     </h3>
+                    <p class="mt-2 text-gray-500">Consulter vos ordonnances. </p>
+                </div>
+                </a>
 
-                    <p class="mt-2 text-gray-500">
-
-                        Consulter vos ordonnances.
-
-                    </p>
+                <a href="mon-dossier-medical.html">
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                    <h3 class="text-xl flex items-center gap-2 font-bold ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 80 80">
+	                         <path d="M0 0h80v80H0z" fill="none" />
+	                         <g fill="none">
+		                     <path fill="#f2994a" fill-rule="evenodd" d="M16 14a4 4 0 0 0-4 4v16a4 4 0 0 1 4-4v-1a4 4 0 0 1 4-4h40a4 4 0 0 1 4 4v1a4 4 0 0 1 4 4v-9.74a4 4 0 0 0-4-4H35.319c-.32 0-.627-.134-.843-.37l-.34-.372l-.376-.411l-.377-.411l-3.106-3.396a4 4 0 0 0-2.951-1.3z" clip-rule="evenodd" />
+		                     <path fill="#f2c94c" d="M12 34a4 4 0 0 1 4-4h48a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" />
+		                     <path fill="#f2f2f2" fill-rule="evenodd" d="M20 25a4 4 0 0 0-4 4v1h48v-1a4 4 0 0 0-4-4z" clip-rule="evenodd" />
+	                         </g>
+                            </svg>
+                             Dossier médical
+                    </h3>
+                    <p class="mt-2 text-gray-500"> Voir votre dossier.</p>
 
                 </div>
+                </a>
+                <a href="prendre-rendez-vous.html">
+                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                    <h3 class="text-xl flex items-center gap-2 font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                    <path d="M0 0h24v24H0z" fill="none" />
+	                    <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
+                        </svg>
+                        Prendre rendez-vous
+                    </h3>
+                    <p class="mt-2 text-gray-500">Choisir un médecin. </p>
+                </div>
+                </a>
 
+                <a href="mon-profil.html">
+                    <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+
+                        <h3 class="text-xl flex items-center gap-2 font-bold">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                       <path d="M0 0h24v24H0z" fill="none" />
+	                       <path fill="#0c2ee2" fill-rule="evenodd" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z" clip-rule="evenodd" />
+                           </svg>
+                            Mon profil
+                        </h3>
+                        <p class="mt-2 text-gray-500">Modifier vos informations. </p>
+                    </div>
+                </a>
+                <a href="notifications.html">
                 <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
 
-                    <h3 class="text-xl font-bold">
-
-                        📁 Dossier médical
-
+                    <h3 class="text-xl flex items-center gap-2 font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+	                    <path d="M0 0h24v24H0z" fill="none" />
+	                    <g fill="none">
+		                <path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+		                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7v3.528a1 1 0 0 1-.105.447l-1.717 3.433A1.1 1.1 0 0 0 4.162 18h15.676a1.1 1.1 0 0 0 .984-1.592l-1.716-3.433a1 1 0 0 1-.106-.447V9a7 7 0 0 0-7-7m0 19a3 3 0 0 1-2.83-2h5.66A3 3 0 0 1 12 21" />
+	                    </g>
+                        </svg>
+                         Notifications
                     </h3>
-
-                    <p class="mt-2 text-gray-500">
-
-                        Voir votre dossier.
-
-                    </p>
-
+                    <p class="mt-2 text-gray-500"> Voir les notifications.</p>
                 </div>
-
-                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-
-                    <h3 class="text-xl font-bold">
-
-                        ➕ Prendre rendez-vous
-
-                    </h3>
-
-                    <p class="mt-2 text-gray-500">
-
-                        Choisir un médecin.
-
-                    </p>
-
-                </div>
-
-                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-
-                    <h3 class="text-xl font-bold">
-
-                        👤 Mon profil
-
-                    </h3>
-
-                    <p class="mt-2 text-gray-500">
-
-                        Modifier vos informations.
-
-                    </p>
-
-                </div>
-
-                <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-
-                    <h3 class="text-xl font-bold">
-
-                        🔔 Notifications
-
-                    </h3>
-
-                    <p class="mt-2 text-gray-500">
-
-                        Voir les notifications.
-
-                    </p>
-
-                </div>
-
+                </a>
             </div>
-
         </main>
-
     </div>
-
     <script src="dashboard1.js"></script>
 
 </body>

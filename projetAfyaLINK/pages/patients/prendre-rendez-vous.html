@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prendre un rendez-vous</title>
+
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+
+    <header class="bg-white shadow">
+
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-3xl font-bold">
+
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+
+            </h1>
+
+            <a href="dashboard1.html"
+                class="text-green-600 font-semibold hover:underline">
+
+                ← Retour
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Contenu -->
+
+    <main class="max-w-2xl mx-auto p-6">
+
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+
+            <h2 class="text-2xl font-bold text-center mb-6">
+
+                Prendre un rendez-vous
+
+            </h2>
+
+            <form id="rdvForm" class="space-y-5">
+
+
+                <div>
+
+                    <label
+                        class="block mb-2 font-medium">
+
+                        Spécialité
+
+                    </label>
+
+                    <select
+                        id="specialite"
+                        class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+
+                        <option value="">Choisir...</option>
+
+                        <option>Médecine générale</option>
+
+                        <option>Cardiologie</option>
+
+                        <option>Pédiatrie</option>
+
+                        <option>Dermatologie</option>
+
+                        <option>Gynécologie</option>
+
+                    </select>
+
+                </div>
+
+                
+
+                <div>
+
+                    <label
+                        class="block mb-2 font-medium">
+
+                        Médecin
+
+                    </label>
+
+                    <select
+                        id="medecin"
+                        class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+
+                        <option value="">Choisir...</option>
+
+                        <option>Dr Niyonkuru</option>
+
+                        <option>Dr Habimana</option>
+
+                        <option>Dr Mukasa</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Date -->
+
+                <div>
+
+                    <label
+                        class="block mb-2 font-medium">
+
+                        Date
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+
+                </div>
+
+                <!-- Heure -->
+
+                <div>
+
+                    <label
+                        class="block mb-2 font-medium">
+
+                        Heure
+
+                    </label>
+
+                    <input
+                        type="time"
+                        id="heure"
+                        class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+
+                </div>
+
+                <!-- Motif -->
+
+                <div>
+
+                    <label
+                        class="block mb-2 font-medium">
+
+                        Motif de consultation
+
+                    </label>
+
+                    <textarea
+                        id="motif"
+                        rows="4"
+                        placeholder="Décrivez votre problème..."
+                        class="w-full border rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+
+                </div>
+
+                <!-- Bouton -->
+
+                <button
+                    type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition">
+
+                    Envoyer la demande
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="prendre-rendez-vous.js"></script>
+
+</body>
+
+</html>
