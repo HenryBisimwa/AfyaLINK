@@ -51,13 +51,13 @@ form.addEventListener("submit", function(e){
         setTimeout(function(){
 
             if(utilisateur.role === "patient"){
-                window.location.href="/pages/patient/dashboard.html";
+                window.location.href = "patients/dashboard1.html";
             }
             else if(utilisateur.role === "medecin"){
-                window.location.href="/pages/docteur/dashboard.html";
+                window.location.href = "docteur/dashboard2.html";
             }
             else{
-                window.location.href="/pages/admin/dashboard.html";
+                window.location.href = "administrateur/dashboard3.html";
             }
         },1000);
 
