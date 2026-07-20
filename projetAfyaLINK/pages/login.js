@@ -4,7 +4,6 @@ const form = document.querySelector("#login-form");
 const message = document.querySelector("#message");
 
 
-
 const utilisateurs = [
 
     {
@@ -28,9 +27,7 @@ const utilisateurs = [
 ];
 
 
-
 form.addEventListener("submit", function(e){
-
     e.preventDefault();
 
     const email = document.querySelector("#email").value.trim();
@@ -45,7 +42,6 @@ form.addEventListener("submit", function(e){
     });
 
     if(utilisateur){
-
         message.className =
         "p-3 rounded-lg mb-4 bg-green-100 text-green-700";
 
@@ -55,35 +51,24 @@ form.addEventListener("submit", function(e){
         setTimeout(function(){
 
             if(utilisateur.role === "patient"){
-
-                window.location.href="../patients/dashboard1.html";
-
+                window.location.href="/pages/patient/dashboard.html";
             }
-
             else if(utilisateur.role === "medecin"){
-
-                window.location.href="../docteur/dashboard.html";
-
+                window.location.href="/pages/docteur/dashboard.html";
             }
-
             else{
-
-                window.location.href="../admin/dashboard.html";
-
+                window.location.href="/pages/admin/dashboard.html";
             }
-
         },1000);
 
     }
 
     else{
-
         message.className =
         "p-3 rounded-lg mb-4 bg-red-100 text-red-700";
 
         message.textContent =
         "Email ou mot de passe incorrect.";
-
     }
 
 });
