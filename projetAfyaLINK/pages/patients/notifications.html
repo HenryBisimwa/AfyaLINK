@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow">
+        <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold">
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+            </h1>
+            <a href="dashboard1.html"
+                class="text-green-600 font-semibold hover:underline">
+                ← Retour
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+            🔔 Notifications
+        </h2>
+        <div class="space-y-5">
+
+            <div class="bg-green-50 border-l-4 border-green-600 rounded-lg p-5 shadow">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-green-700">
+                        ✅ Rendez-vous confirmé
+                    </h3>
+                    <span class="text-sm text-gray-500">
+                        Aujourd'hui
+                    </span>
+                </div>
+                <p class="mt-2 text-gray-700">
+                    Votre rendez-vous avec <strong>Dr Niyonkuru</strong> du
+                    <strong>15 Août 2026 à 09h30</strong> est confirmé.
+                </p>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-5 shadow">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-blue-700">
+                        💊 Nouvelle ordonnance
+                    </h3>
+                    <span class="text-sm text-gray-500">
+                        Hier
+                    </span>
+                </div>
+                <p class="mt-2 text-gray-700">
+                    Une nouvelle ordonnance a été ajoutée par
+                    <strong>Dr Habimana.</strong>
+                </p>
+            </div>
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-5 shadow">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-yellow-700">
+                        ⏰ Horaire modifié
+                    </h3>
+                    <span class="text-sm text-gray-500">Il y a 3 jours</span>
+                </div>
+                <p class="mt-2 text-gray-700">
+                    Votre consultation est déplacée de
+                    <strong>09h30</strong> à <strong>11h00.</strong>
+                </p>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-600 rounded-lg p-5 shadow">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-red-700">
+                        ❌ Rendez-vous annulé
+                    </h3>
+                    <span class="text-sm text-gray-500">
+                        10 Juillet 2026
+                    </span>
+                </div>
+                <p class="mt-2 text-gray-700">
+                    Votre rendez-vous avec
+                    <strong>Dr Mukasa</strong>
+                    a été annulé.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-10">
+            <button id="toutLire"
+                class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition">
+                Tout marquer comme lu
+            </button>
+        </div>
+    </main>
+
+    <script src="notifications.js"></script>
+
+</body>
+
+</html>
