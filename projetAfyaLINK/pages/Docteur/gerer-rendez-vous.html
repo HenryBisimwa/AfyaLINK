@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les rendez-vous</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow">
+
+       <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+          <h1 class="text-3xl font-bold">
+            <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+          </h1>
+            <a href="dashboard2.html"
+             class="text-green-600 font-semibold">
+               ← Retour
+            </a>
+       </div>
+    </header>
+    <main class="max-w-6xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Gestion des rendez-vous
+        </h2>
+
+
+
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+          <div class="flex justify-between">
+               <div>
+                  <h3 class="text-xl font-bold">
+                    Henry Bisimwa
+                  </h3>
+                  <p>15 Août 2026</p>
+                  <p>09:30</p>
+                  <p>Cardiologie</p>
+               </div>
+                  <span id="statut1"
+                    class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full h-fit">
+                        En attente
+                  </span>
+           </div>
+           <div class="flex gap-3 mt-6">
+               <button class="accepter bg-green-600 text-white px-5 py-2 rounded">
+                  Accepter
+               </button>
+               <button class="refuser bg-red-600 text-white px-5 py-2 rounded">
+                  Refuser
+               </button>
+               <button class="details bg-blue-600 text-white px-5 py-2 rounded">
+                  Voir détails
+               </button>
+           </div>
+       </div>
+
+
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+           <div class="flex justify-between">
+               <div>
+                   <h3 class="text-xl font-bold">
+                      Alice Ndayishimiye
+                   </h3>
+                   <p>18 Août 2026</p>
+                   <p>11:00</p>
+                   <p>Pédiatrie</p>
+               </div>
+                <span id="statut2"
+                 class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full h-fit">
+                  En attente
+                </span>
+           </div>
+           <div class="flex gap-3 mt-6">
+<button class="accepter bg-green-600 text-white px-5 py-2 rounded">
+Accepter
+</button>
+<button class="refuser bg-red-600 text-white px-5 py-2 rounded">
+Refuser
+</button>
+<button class="details bg-blue-600 text-white px-5 py-2 rounded">
+Voir détails
+</button>
+           </div>
+        </div>
+    </main>
+    <script src="gerer-rendez-vous.js"></script>
+    
+</body>
+</html>
