@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard2</title>
+    <title>Dashboard Médecin</title>
+    <link rel="stylesheet" href="/src/output.css">
+
 </head>
-<body>
-    
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold">
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+            </h1>
+
+            <button id="logout"
+                class="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg">
+
+                Déconnexion
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+
+            <h2 id="salutation"
+                class="text-3xl font-bold text-green-700">
+
+                Bonjour Dr Niyonkuru
+
+            </h2>
+
+            <p class="text-gray-500 mt-2">
+                Tableau de bord du médecin
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                <h3 class="text-5xl mb-3">📅</h3>
+                <p id="rdv"
+                    class="text-4xl font-bold text-green-600">
+                    12
+                </p>
+
+                <p class="mt-2">
+                    Rendez-vous
+                </p>
+
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                <h3 class="text-5xl mb-3">⏳</h3>
+                <p id="attente"
+                    class="text-4xl font-bold text-orange-500">
+                    5
+                </p>
+
+                <p class="mt-2">
+                    En attente
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                <h3 class="text-5xl mb-3">👥</h3>
+                <p id="patients"
+                    class="text-4xl font-bold text-blue-600">
+                    45
+                </p>
+                <p class="mt-2">
+                    Patients
+                </p>
+
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+
+                <h3 class="text-5xl mb-3">💊</h3>
+
+                <p id="ordonnances"
+                    class="text-4xl font-bold text-purple-600">
+                    28
+                </p>
+
+                <p class="mt-2">
+                    Ordonnances
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-6 mt-8">
+
+            <h2 class="text-2xl font-bold mb-5">
+                Actions rapides
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <a href="gerer-rendez-vous.html"
+                    class="bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 text-center">
+                    📋 Gérer les rendez-vous
+                </a>
+
+                <a href="mes-patients.html"
+                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 text-center">
+                    👥 Mes patients
+                </a>
+
+                <a href="creer-ordonnance.html"
+                    class="bg-purple-600 hover:bg-purple-700 text-white rounded-lg p-4 text-center">
+                    💊 Créer une ordonnance
+                </a>
+
+                <a href="planning.html"
+                    class="bg-orange-500 hover:bg-orange-600 text-white rounded-lg p-4 text-center">
+                    📅 Mon planning
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-8">
+            <button id="actualiser"
+                class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg">
+                🔄 Actualiser les statistiques
+            </button>
+        </div>
+
+    </main>
+
+    <script src="dashboard2.js"></script>
+
 </body>
+
 </html>
