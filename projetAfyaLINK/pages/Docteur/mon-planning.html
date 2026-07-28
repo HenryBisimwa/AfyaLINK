@@ -1,26 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon planning</title>
+    <title>Mon Planning</title>
+
     <link rel="stylesheet" href="/src/output.css">
 </head>
+
 <body class="bg-gray-100">
+
+    <!-- Header -->
+
     <header class="bg-white shadow">
 
-       <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-          <h1 class="text-3xl font-bold">
-            <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
-          </h1>
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-3xl font-bold">
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+            </h1>
+
             <a href="dashboard2.html"
-             class="text-green-600 font-semibold">
-               ← Retour
+                class="text-green-600 font-semibold hover:underline">
+
+                ← Retour
+
             </a>
-       </div>
+
+        </div>
+
     </header>
-    <main>
-        
+
+    <!-- Contenu -->
+
+    <main class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+
+            Mon planning
+
+        </h2>
+
+        <!-- Consultation 1 -->
+
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <h3 class="text-xl font-bold">
+
+                        Henry Bisimwa
+
+                    </h3>
+
+                    <p>🕘 08:30</p>
+
+                    <p>Cardiologie</p>
+
+                </div>
+
+                <span id="etat1"
+                    class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full">
+
+                    En attente
+
+                </span>
+
+            </div>
+
+            <div class="flex gap-3 mt-5">
+
+                <button class="commencer bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded">
+
+                    Commencer
+
+                </button>
+
+                <button class="voir bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded">
+
+                    Voir
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Consultation 2 -->
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <h3 class="text-xl font-bold">
+
+                        Alice Ndayishimiye
+
+                    </h3>
+
+                    <p>🕚 11:00</p>
+
+                    <p>Pédiatrie</p>
+
+                </div>
+
+                <span id="etat2"
+                    class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full">
+
+                    En attente
+
+                </span>
+
+            </div>
+
+            <div class="flex gap-3 mt-5">
+
+                <button class="commencer bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded">
+
+                    Commencer
+
+                </button>
+
+                <button class="voir bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded">
+
+                    Voir
+
+                </button>
+
+            </div>
+
+        </div>
+
     </main>
+
+    <script src="mon-planning.js"></script>
+
 </body>
+
 </html>
