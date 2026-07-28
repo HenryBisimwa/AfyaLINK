@@ -1,5 +1,4 @@
 let main = document.querySelector('#accueil');
-
 let img = [
     "autres/images/mik.jpg",
     "autres/images/bgi.jpg",
@@ -63,9 +62,7 @@ let overlay = document.querySelector('#overlay');
 burger.addEventListener('click', () => {
 
     burger.classList.toggle('rotate-90');
-
     mobileMenu.classList.toggle('hidden');
-
     overlay.classList.toggle('hidden');
 
 
@@ -78,9 +75,7 @@ mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
 
         mobileMenu.classList.add('hidden');
-
         overlay.classList.add('hidden');
-
         burger.classList.remove('rotate-90');
 
     });
@@ -90,9 +85,7 @@ mobileLinks.forEach(link => {
 overlay.addEventListener('click', () => {
 
     mobileMenu.classList.add('hidden');
-
     overlay.classList.add('hidden');
-
     burger.classList.remove('rotate-90');
 
 });
