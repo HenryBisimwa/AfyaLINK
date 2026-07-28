@@ -46,7 +46,7 @@ form.addEventListener("submit", function(e){
                 window.location.href = "docteur/dashboard2.html";
             }
             else{
-                window.location.href = "administrateur/dashboard3.html";
+                window.location.href = "administrateur/dashboard-admin.html";
             }
         },1000);
 
