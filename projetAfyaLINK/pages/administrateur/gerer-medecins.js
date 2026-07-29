@@ -16,7 +16,6 @@ recherche.addEventListener("keyup", function () {
 
 
 
-
 const modifier = document.querySelectorAll(".modifier");
 modifier.forEach(function (bouton) {
     bouton.addEventListener("click", function () {
