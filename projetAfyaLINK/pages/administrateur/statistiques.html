@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+           <h1 class="text-3xl font-bold">
+               <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+           </h1>
+           <a href="dashboard-admin.html"
+                class="text-green-600 font-semibold">
+                    ← Retour
+           </a>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto p-6">
+         <h2 class="text-3xl font-bold text-center mb-2">
+             Statistiques de l'hôpital
+         </h2>
+          <p id="date" class="text-center text-gray-500 mb-8"></p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+               <div class="bg-white rounded-xl shadow p-6 text-center">
+                  <h3 class="text-lg font-semibold">👥 Patients</h3>
+                    <p id="patients" class="text-4xl font-bold text-green-600 mt-3">
+                        250
+                    </p>
+               </div>
+               <div class="bg-white rounded-xl shadow p-6 text-center">
+                   <h3 class="text-lg font-semibold">👨‍⚕️ Médecins</h3>
+                       <p id="medecins" class="text-4xl font-bold text-blue-600 mt-3">
+                             18
+                       </p>
+               </div>
+               <div class="bg-white rounded-xl shadow p-6 text-center">
+                   <h3 class="text-lg font-semibold">📅 Rendez-vous</h3>
+                       <p id="rdv" class="text-4xl font-bold text-orange-500 mt-3">
+                            52
+                       </p>
+               </div>
+               <div class="bg-white rounded-xl shadow p-6 text-center">
+                    <h3 class="text-lg font-semibold">💊 Ordonnances</h3>
+                      <p id="ordonnances" class="text-4xl font-bold text-purple-600 mt-3">
+                            130
+                     </p>
+               </div>
+           </div>
+           <div class="bg-white rounded-xl shadow mt-8 p-6">
+                <h3 class="text-xl font-bold mb-4">
+                     Résumé
+                </h3>
+                <p id="resume">
+                    Aujourd'hui, l'hôpital a enregistré une activité normale.
+                </p>
+           </div>
+           <div class="text-center mt-8">
+               <button id="actualiser"
+                    class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg">
+                        🔄 Actualiser
+               </button>
+           </div>
+    </main>
+
+    <script src="statistiques.js"></script>
+
+</body>
+</html>
