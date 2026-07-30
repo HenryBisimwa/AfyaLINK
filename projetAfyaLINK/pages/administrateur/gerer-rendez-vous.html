@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les rendez-vous</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold">
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+            </h1>
+            <a href="dashboard-admin.html" class="text-green-600 font-semibold">
+                ← Retour
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">
+            Gestion des rendez-vous
+        </h2>
+        <input type="text" id="recherche" placeholder="Rechercher un patient..."
+            class="w-full border rounded-lg p-3 mb-6">
+        <div class="overflow-x-auto">
+            <table class="w-full bg-white rounded-lg shadow">
+                <thead class="bg-orange-500 text-white">
+                    <tr>
+                        <th class="p-4">Patient</th>
+                        <th>Date</th>
+                        <th>Heure</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="rdv border-b">
+                        <td class="nom p-4">Henry Bisimwa</td>
+                        <td>15 Août 2026</td>
+                        <td>09:30</td>
+                        <td class="statut text-yellow-600 font-semibold">
+                            En attente
+                        </td>
+                        <td>
+                            <button class="valider bg-green-600 text-white px-3 py-1 rounded">
+                                Valider
+                            </button>
+                            <button class="annuler bg-red-600 text-white px-3 py-1 rounded">
+                                Annuler
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="rdv border-b">
+                        <td class="nom p-4">Alice Ndayishimiye</td>
+                        <td>18 Août 2026</td>
+                        <td>11:00</td>
+                        <td class="statut text-yellow-600 font-semibold">
+                            En attente
+                        </td>
+                        <td>
+                            <button class="valider bg-green-600 text-white px-3 py-1 rounded">
+                                Valider
+                            </button>
+                            <button class="annuler bg-red-600 text-white px-3 py-1 rounded">
+                                Annuler
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="gerer-rendez-vous.js"></script>
+
+</body>
+
+</html>
