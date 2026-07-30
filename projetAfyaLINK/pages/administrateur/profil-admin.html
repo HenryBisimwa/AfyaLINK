@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Administrateur</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold">
+                <span class="text-green-600">Afya</span><span class="text-blue-700">Link</span>
+            </h1>
+
+            <a href="dashboard-admin.html" class="text-green-600 font-semibold">
+                ← Retour
+            </a>
+        </div>
+    </header>
+    <main class="max-w-4xl mx-auto p-6">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-28 h-28 rounded-full bg-purple-600 text-white flex items-center justify-center text-5xl font-bold">
+                    A
+                </div>
+                <h2 class="text-2xl font-bold mt-4">
+                    Administrateur
+                </h2>
+                <p class="text-gray-500">
+                    Gestionnaire AfyaLink
+                </p>
+            </div>
+            <div class="mt-10 space-y-4">
+                <div class="flex justify-between border-b pb-3">
+                    <span class="font-semibold">Email</span>
+                    <span>admin@afyalink.com</span>
+                </div>
+                <div class="flex justify-between border-b pb-3">
+                    <span class="font-semibold">Téléphone</span>
+                    <span>+257 79 123 456</span>
+                </div>
+                <div class="flex justify-between border-b pb-3">
+                    <span class="font-semibold">Rôle</span>
+                    <span>Administrateur</span>
+                </div>
+                <div class="flex justify-between border-b pb-3">
+                    <span class="font-semibold">Médecins gérés</span>
+                    <span>18</span>
+                </div>
+                <div class="flex justify-between border-b pb-3">
+                    <span class="font-semibold">Patients enregistrés</span>
+                    <span>250</span>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <button id="modifier" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg">
+                    Modifier le profil
+                </button>
+                <button id="password" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+                    Changer le mot de passe
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="profil-admin.js"></script>
+
+</body>
+</html>
