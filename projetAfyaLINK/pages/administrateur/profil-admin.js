@@ -11,7 +11,7 @@ password.addEventListener("click", function () {
     const confirmation = confirm("Voulez-vous changer votre mot de passe ?");
     if (confirmation) {
         alert("La modification du mot de passe sera disponible prochainement.");
-
+         
     }
 
 });
