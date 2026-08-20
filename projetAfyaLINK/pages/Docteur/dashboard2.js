@@ -14,7 +14,6 @@ else {
 }
 
 const actualiser = document.querySelector("#actualiser");
-
 const rdv = document.querySelector("#rdv");
 const attente = document.querySelector("#attente");
 const patients = document.querySelector("#patients");
