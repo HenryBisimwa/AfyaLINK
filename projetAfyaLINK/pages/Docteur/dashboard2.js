@@ -4,13 +4,13 @@ const heure = new Date().getHours();
 console.log(heure);
 
 if (heure < 12) {
-    salutation.textContent = "Bonjour Dr Niyonkuru ☀️";
+    salutation.textContent = "Bonjour Dr Niyonkuru 🌄";
 }
 else if (heure < 18) {
-    salutation.textContent = "Bon après-midi Dr Niyonkuru 🌤️";
+    salutation.textContent = "Bon après-midi Dr Niyonkuru ☀️";
 }
 else {
-    salutation.textContent = "Bonsoir Dr Niyonkuru 🌙";
+    salutation.textContent = "Bonsoir Dr Niyonkuru 🌗";
 }
 
 const actualiser = document.querySelector("#actualiser");
