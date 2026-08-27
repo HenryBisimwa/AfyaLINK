@@ -17,7 +17,6 @@ actualiser.addEventListener("click", function(){
     medecins.textContent = Math.floor(Math.random()*30)+10;
     rdv.textContent = Math.floor(Math.random()*80)+20;
     ordonnances.textContent = Math.floor(Math.random()*200)+50;
-    resume.textContent =
-    "Les statistiques ont été mises à jour avec succès.";
+    resume.textContent = "Les statistiques ont été mises à jour avec succès.";
 
 });
