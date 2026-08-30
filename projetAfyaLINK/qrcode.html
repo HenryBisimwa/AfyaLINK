@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>QR Code - AfyaLINK</title>
+
+    <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body>
+<body class="bg-gray-100 minS-h-screen flex items-center justify-center">
 
-    <h1>QR Code AfyaLINK</h1>
+    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
 
-    <p>Scannez ce QR Code pour accéder à AfyaLINK.</p>
+        <h1 class="text-2xl font-bold text-blue-700 mb-4">
+            QR Code AfyaLINK
+        </h1>
 
-    <canvas id="qrcode"></canvas>
+        <p class="text-gray-600 mb-6">
+            Scannez ce code pour accéder à AfyaLINK
+        </p>
+
+        <canvas id="qrcode"></canvas>
+
+    </div>
 
     <script type="module" src="qrcode.js"></script>
 

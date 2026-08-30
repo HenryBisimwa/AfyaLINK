@@ -4,7 +4,7 @@ const canvas = document.getElementById("qrcode");
 
 QRCode.toCanvas(
     canvas,
-    "https://afyalink-ruby.vercel.app/",
+    "https://sprightly-sunshine-700a62.netlify.app/",
     function (error) {
         if (error) {
             console.error(error);
